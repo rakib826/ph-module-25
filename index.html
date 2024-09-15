@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>DOM</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome yoo</h1>
+  </header>
+  <main id="main-content">
+    <h1>Welcome to DOM</h1>
+    <ul>
+      <li>Jalali Set</li>
+      <li>Shafayet</li>
+      <li>DJ Khaled</li>
+    </ul>
+    <section class="fruit-container">
+      <h1 id="fruits-title">I like Fruits</h1>
+      <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Carrot</li>
+      </ul>
+    </section>
+    <section class="places-container">
+      <h1 id="places-title">Places I like to visit</h1>
+      <ul id="places-list">
+        <li>Bandarban</li>
+        <li>Cox Bazar</li>
+        <li>Kuakata</li>
+      </ul>
+    </section>
+  </main>
+  <script src="./js/dom.js"></script>
+  <script src="./styles/styleInJs.js"></script>
+  <script>
+    const liCollection = document.getElementsByTagName("li");
+    for(const li of liCollection){
+      // console.log(li.innerText)
+    }
+    const someLi = document.querySelectorAll(".fruit-container li");
+    // console.log(someLi);
+    for(const li of someLi){
+      // console.log(li.innerText);
+    }
+  </script>
+</body>
+</html>
